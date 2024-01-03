@@ -6,5 +6,11 @@ public class Main {
         int s=a>>n;
         System.out.println("Right Shift"+s);
         System.out.println("Left Shift"+r);
+
+        if (a==4) {
+            System.out.println("hello World");
+        }else {
+            System.out.println("Nothing to do");
+        }
     }
 }
