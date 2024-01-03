@@ -1,6 +1,6 @@
 public class SwitchStatement {
     public static void main(String[] args) {
-        int num=2;
+        int num=30;
 
         switch (num){
             case 0:
@@ -15,6 +15,8 @@ public class SwitchStatement {
             case 3:
                 System.out.println("Number is Three");
                 break;
+            default:
+                System.out.println("Invalid Input");
         }
     }
 }
