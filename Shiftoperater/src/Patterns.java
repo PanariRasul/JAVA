@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Patterns {
     public static void main(String[] args) {
         System.out.println("Wriete code for following Patterns using loops");
@@ -10,13 +12,47 @@ public class Patterns {
                 * * * *
         */
 
-        for(int j=1;j<=4; j++){
-            for(int i=1;i<=4;i++){
+//        for(int j=1;j<=4; j++){
+//            for(int i=1;i<=4;i++){
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+        System.out.println("==========================================================================");
+
+       /*
+
+
+        *
+        ***
+        *****
+
+
+        */
+
+        for (int j=1; j<=3; j++){
+            for(int i=1; i<=5; i++){
                 System.out.print("* ");
+
+                if (j==1 || i==1 || j==2 || i==1 || i==2 || i==3 || j==3 || i==1 || i==2|| i==3|| i==4 || i==5)
+                    System.out.println("* ");
+                else
+                    System.out.println(" ");
+
+            }
+
+
+        }
+
+        int rows = 3;
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
             }
             System.out.println();
         }
-        System.out.println("==========================================================================");
+
+
         /*
                     1 2 3 4
                     2 3 4 5
@@ -91,3 +127,4 @@ public class Patterns {
 
     }
 }
+
